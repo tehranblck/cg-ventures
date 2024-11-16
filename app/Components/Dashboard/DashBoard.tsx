@@ -1,16 +1,25 @@
+'use client';
+import Image from "next/image";
+import React from "react";
 
-import Image from 'next/image'
-import React from 'react'
-import Container from '../Container/Container'
-
-const DashBoard = () => {
+const DashboardImageWithText: React.FC = () => {
     return (
-        <Container className='flex flex-col items-center  !px-16 bg-gradient-to-b from-black via-gray-900 to-black'>
-            <Image alt='static' quality={86} width={2000} height={2000} className='w-[100%]' src={'/static.png'} />
-            <h3>The values ​​we provide are our greatest assurance.</h3>
+        <section className="relative w-full h-[100vh] bg-gradient-to-b from-black via-gray-900 to-black">
+            {/* Görsel */}
+            <Image width={1000} height={1000} quality={86}
+                src="/static.png" // Görsel yolunu buraya yazın
+                alt="Dashboard Overview"
+                className="absolute inset-0 w-full h-full object-contain"
+            />
 
-        </Container>
-    )
-}
+            {/* Metin Kutusu */}
+            <div className="absolute bottom-32 sm:bottom-4  left-1/2 transform -translate-x-1/6 lg:-translate-x-1/4  text-white p-4 rounded-md max-w-2xl text-center">
+                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl italic">
+                    The values <strong className="font-semibold">we provide</strong> are our greatest assurance.
+                </p>
+            </div>
+        </section>
+    );
+};
 
-export default DashBoard
+export default DashboardImageWithText;
