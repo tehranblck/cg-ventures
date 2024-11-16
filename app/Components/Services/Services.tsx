@@ -6,7 +6,7 @@ import Container from "../Container/Container";
 
 const Services: React.FC = () => {
     return (
-        <Container className=" bg-gradient-to-b from-black via-gray-900 to-black py-16 !px-16">
+        <Container className=" bg-gradient-to-b from-black via-gray-900 to-black py-16 !px-4">
             <div className="">
                 <h2 className="text-center text-white text-3xl font-semibold mb-8">
                     Our <span className="italic font-thin">Services</span>

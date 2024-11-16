@@ -2,7 +2,7 @@ import React from "react";
 
 const MarketingText: React.FC = () => {
     return (
-        <section className="bg-black h-[80vh] text-white py-12 px-4 flex items-center justify-center">
+        <section className="bg-black h-[90vh] text-white py-12 px-4 flex items-center justify-center">
             <div className="max-w-7xl text-center">
                 <p className="text-lg marketing sm:text-xl md:text-4xl leading-relaxed">
                     Cgventures is at the forefront of online marketing, influencing top
