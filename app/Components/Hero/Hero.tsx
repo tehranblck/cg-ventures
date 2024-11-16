@@ -3,8 +3,8 @@ import React from 'react';
 
 const Hero: React.FC = () => {
     return (
-        <section className="relative h-screen w-full overflow-hidden">
-            <video
+        <section className="relative  h-screen w-full overflow-hidden">
+            <video style={{ backgroundAttachment: 'fixed' }}
                 autoPlay
                 loop
                 muted
