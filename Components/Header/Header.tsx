@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { navLinks } from "../navLinks";
+import Link from "next/link";
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,12 +34,12 @@ const Header: React.FC = () => {
 
                 {/* "Let's Talk" Button */}
                 <div className="hidden md:flex">
-                    <a
+                    <Link
                         href="/contact"
                         className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition"
                     >
                         Let's Talk
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Hamburger Menu */}
